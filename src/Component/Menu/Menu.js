@@ -14,7 +14,6 @@ function Menu() {
         setactive(false);
     }
     return (
-
         <>
             <Navbar active={active} />
             <div className='menu'>

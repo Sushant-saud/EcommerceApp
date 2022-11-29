@@ -2,7 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import axios from 'axios';
 import NavLink from 'react-dom'
-
+import {mobile} from '../Responsive'
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -23,6 +23,8 @@ const Wrapper = styled.div`
   padding: 20px;
   background-color: white;
   background-color:Teal;
+  ${mobile({ width: "85%" })}
+
 `;
 
 const Title = styled.h1`
@@ -63,7 +65,7 @@ const Register = () => {
   const [phonenumber,setphonenum]=useState(" ");
   const [email,setEmail]=useState(" ");
   const [password,setPassword]=useState(" ");
-  const [error, seterror] = useState(false)
+  const [error, seterror] = useState(false);
   const handlesubmit = async (e) => {
     e.preventDefault();
     seterror(false);
