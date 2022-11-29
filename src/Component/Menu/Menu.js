@@ -27,9 +27,9 @@ function Menu() {
                         {/* {active ?<Close className='imclose' onClick={handleClose} /> : " "}  */}
                         <Link to="/"><li>HOME</li></Link>
                         <Link to="/store"><li>STORE <ArrowBackIosRounded className='ArrowBack' /></li> </Link>
-                        <li>IPHONE</li>
-                        <li>IPAD</li>
-                        <li>MACBOOK</li>
+                        <Link to="/iphone"><li>IPHONE</li></Link>
+                        <Link to="/ipad"><li>IPAD</li></Link>
+                        <Link to="/macbook"><li>MACKBOOK</li></Link>
                         <Link to="/store/Accesories"><li>ACCESORIES</li></Link>
                     </ul>
                 </div>

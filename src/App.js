@@ -13,6 +13,7 @@ import BestSellerItemList from './Component/BestSellerItemList/BestSellerItemLis
 import BestSellerItem from './Component/BestSellerItem/BestSellerItem';
 import Bestseller from './Component/Bestseller/Bestseller';
 import Profile from './Component/Profile/Profile';
+import Iphone from './Component/Iphone/Iphone';
 function App() {
   const user=useSelector((state)=>state.user.currentUser);
   console.log(null);
@@ -23,6 +24,9 @@ function App() {
         <Route exect path="/store" element={<Store/>} />
         <Route exect path="/store/:Accesories" element={<Accesories/>} />
         <Route exect path="/bestseller/:category" element={<ProductList/>}/>
+        <Route exect path="/iphone" element={<Iphone/>}/>
+        <Route exect path="/ipad" element={<Iphone/>}/>
+        <Route exect path="/macbook" element={<Iphone/>}/>
         {/* <Route path="/products/:category" element={<ProductList />} /> */}
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/product/:id" element={<Product />} />
