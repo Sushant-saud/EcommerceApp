@@ -1,0 +1,122 @@
+.Best-Seller-Item {
+  flex: 1;
+  min-width: 250px;
+  min-height: 250px;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: #f5fbfd;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  gap: 1rem;
+  border-radius: 10px;
+}
+.Best-Seller-Info:hover {
+  opacity: 1;
+}
+.Best-Seller-Circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(245, 241, 241);
+  position: absolute;
+  top: 19%;
+  left: 12%;
+}
+.Best-Seller-Img {
+  height: 70%;
+  width: 100%;
+  z-index: 2;
+}
+.Best-Seller-Single-Icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  transition: all 0.5s ease;
+}
+.Best-Seller-Icon {
+  width: 100%;
+  height: 100%;
+}
+.Best-Seller-Icon:hover {
+  transform: scale(1.2);
+}
+.Best-Seller-Info {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.star {
+  color: #ffc600;
+  opacity: 1;
+}
+.star-differnt {
+  width: 11px;
+  height: 10px;
+  color: #c1c8ce;
+  opacity: 1;
+}
+.Best-Seller-Des {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+.Best-Seller-Des h3 {
+  text-align: center;
+  font: normal normal 600 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #262626;
+  opacity: 1;
+}
+
+.Best-Seller-star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.strike {
+  text-align: center;
+  font: normal normal normal 14px/17px Proxima Nova;
+  letter-spacing: 0.4px;
+  color: #ff4858;
+  opacity: 1;
+  margin: 10px;
+}
+.strike1 {
+  font: normal normal normal 16px/17px Proxima Nova;
+}
+@media screen and (max-width: 650px) {
+  .Best-Seller-Item {
+    min-width: 260px;
+    min-height: 240px;
+  }
+  .Best-Seller-Circle {
+    width: 150px;
+    height: 150px;
+    top: 14%;
+    left: 18%;
+  }
+  .Best-Seller-Img {
+  height: 59%;
+  width: 100%;
+  z-index: 2;
+}
+}

@@ -1,0 +1,172 @@
+.Container2 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.Arrow-left {
+  width: 50px;
+  height: 50px;
+  background:rgb(135, 219, 17);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  cursor: pointer;
+  opacity: 0.7;
+  top: 50%;
+  left: 10px;
+  z-index: 2;
+}
+.Arrow-right {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background: #ea9898;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  opacity: 0.7;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  right: 10px;
+  cursor: pointer;
+}
+.Wrapper2 {
+  height: 100%;
+  display: flex;
+  transition: all 1.5s ease;
+}
+.slide {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.Image {
+  height: 75%;
+}
+.ImgContainer {
+  flex: 1;
+  height: 100%;
+}
+.InfoContainer {
+  flex: 1;
+  text-transform: capitalize;
+  padding: 50px;
+  color: black;
+}
+.Title {
+  font-size: 70px;
+}
+.Desc {
+  font-size: 20px;
+  margin: 50px 0px;
+  font-weight:600;
+  letter-spacing: 3px;
+  color:rgb(165, 234, 234);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Button {
+  padding: 10px;
+  font-size: 20px;
+  background: transparent;
+  cursor: pointer;
+  color: #ea9898;
+}
+.letsee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:1.3rem;
+}
+.icon{
+  color:white;
+  font-size:12px;
+}
+.letsee h3 {
+  text-align: center;
+  font: normal normal 600 30px/36px Proxima Nova;
+  letter-spacing: 0.75px;
+  color: #22262a;
+  font-weight:bolder;
+  font-family: 'Courier New', Courier, monospace;
+ 
+ 
+}
+@media screen and (max-width:650px){
+  .Container2 {
+    width: 100%;
+    height: 50vh;
+    
+  }
+  .Arrow-left {
+    width: 30px;
+    height: 30px;
+    top:40%;
+    left:0;
+    background: black;
+  }
+  .Arrow-right {
+    width: 30px;
+    height: 30px;
+    right:0;
+    top:40%;
+    background: black;
+  }
+  .Wrapper2 {
+    height: 50%;
+    display: flex;
+    transition: all 1.5s ease;
+  }
+  .slide {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+  .Image {
+    height:50%;
+    padding:12px;
+  }
+  .ImgContainer {
+    flex: 1;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: c
+    ;
+  }
+  .InfoContainer {
+    flex: 1;
+    text-transform: capitalize;
+    padding: 50px;
+    color: black;
+  }
+  .Title {
+    font-size: 25px;
+  }
+  .Desc {
+    font-size: 15px;
+    margin: 10px 0px;
+    font-weight: 600;
+    letter-spacing:1px;
+  }
+  .Button {
+    padding: 10px;
+    font-size: 20px;
+   
+  }
+  
+  .letsee h3 {
+   
+    font: normal normal 600 20px/36px Proxima Nova;
+   
+  }
+}

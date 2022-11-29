@@ -1,0 +1,45 @@
+.Services {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Freeshiping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Freeshiping h3 {
+  text-align: center;
+  font: normal normal 600 24px/43px Proxima Nova;
+  letter-spacing: 0px;
+  color: #22262a;
+  opacity: 0.8;
+  text-transform:capitalize;
+}
+.Freeshiping img {
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.Freeshiping p {
+  width: 330px;
+  height: 102px;
+  text-align: center;
+  font: normal normal normal 14px/24px Proxima Nova;
+  letter-spacing: 0px;
+  color: #7a7d81;
+  opacity: 1;
+}
+@media screen and (max-width:650px) {
+  .Services{
+    flex-direction: column;
+    margin-top:1rem;
+
+  }
+  
+.Freeshiping {
+
+  width: 330px;
+  height: 247px;
+}
+}

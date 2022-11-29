@@ -1,0 +1,455 @@
+.AccessorFirst-Full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.AccessorFirst {
+  display: flex;
+  width: 80%;
+  gap: 1.5rem;
+}
+.AccessLeft {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+  border-radius: 4px;
+  opacity: 1;
+}
+.AccesHeading {
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  text-align: left;
+  font: normal normal 600 18px/28px Proxima Nova;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.AccessLeft-First {
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  color: #22262a;
+  width: 270px;
+  height: 371px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AccessLeft-First-list {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  justify-content: center;
+  flex-direction: column;
+}
+.AccessLeft-First-list li {
+  text-align: left;
+  font: normal normal 600 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  opacity: 1;
+  color: #262626;
+}
+.AccessLeft-First-list li:hover {
+  color: #33a0ff;
+}
+.AccessLeft-First-quantity li {
+  font: normal normal 600 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  opacity: 1;
+}
+.AccessLeft-First-quantity li:hover {
+  color: #33a0ff;
+}
+.AccessLeft-First-quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #262626;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.AccessLeft-Second {
+  width: 270px;
+  height: 144px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+}
+.AccessLeft-Fourth {
+  width: 270px;
+  height: 245px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.AccessLeft-Fourth h3 {
+  text-align: left;
+  font: normal normal 600 18px/28px Proxima Nova;
+  letter-spacing: 0px;
+  color: #22262a;
+  opacity: 1;
+}
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.brand-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.brand-list li {
+  text-align: left;
+  font: normal normal 600 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #262626;
+  opacity: 1;
+}
+.brand-list li:hover {
+  color: #33a0ff;
+}
+
+.AccessLeft-Second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.Range {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.AccessLeft-Second h3 {
+  text-align: left;
+  font: normal normal 600 18px/28px Proxima Nova;
+  letter-spacing: 0px;
+  color: #22262a;
+  opacity: 1;
+}
+.AccessLeft-Second p {
+  text-align: left;
+  font: normal normal 600 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #262626;
+  opacity: 1;
+}
+.slider {
+  width: 90%;
+  height: 70px;
+  opacity: 1;
+}
+
+.AccessLeft-Third {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 270px;
+  height: 123px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+}
+.AccessLeft-Third p {
+  text-align: left;
+  font: normal normal 600 18px/28px Proxima Nova;
+  letter-spacing: 0px;
+  color: #22262a;
+  opacity: 1;
+}
+.AccessLeft-Fifth {
+  width: 270px;
+  height: 56px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AccessLeft-Fifth p {
+  text-align: center;
+  font: normal normal normal 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #262626;
+  opacity: 1;
+}
+.color {
+  margin-left: -1.5rem;
+}
+.color ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.color .blue {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #006cff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.color .black {
+  width: 16px;
+  height: 16px;
+  background: black 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50%;
+}
+.color .green {
+  width: 16px;
+  height: 16px;
+  background: green 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50%;
+}
+.color .yellow {
+  width: 16px;
+  height: 16px;
+  background: yellow 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 50%;
+}
+.color .red {
+  width: 16px;
+  height: 16px;
+  background: red 0% 0% no-repeat padding-box;
+  border-radius: 50%;
+  opacity: 1;
+}
+.AccessRight {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.AccessRight-First {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 870px;
+  height: 340px;
+  background: #2e90e5 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+}
+.AccessRight-First img {
+  width: 366px;
+  height: 340px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.AccessRight-First-des {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.AccessRight-First-des h3 {
+  font: normal normal 300 42px/43px Proxima Nova;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.AccessRight-First-des p {
+  width: 283px;
+  height: 69px;
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal normal 16px/28px Proxima Nova;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  opacity: 1;
+}
+.AccessRight-First-des .shop {
+  width: 75px;
+  height: 17px;
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal bold 18px/22px Proxima Nova;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  border-bottom: 4px double white;
+}
+.AccessRight-Second {
+  width: 870px;
+  height: 58px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  margin-top: 1rem;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.AccessRight-Second .img2 {
+  width: 20px;
+  height: 20px;
+}
+
+.AccessRight-Second-Item p {
+  width: 52px;
+  height: 17px;
+  text-align: center;
+  font: normal normal normal 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #22262a;
+  opacity: 1;
+}
+.AccessRight-Second-sort span {
+  width: 46px;
+  height: 17px;
+  text-align: center;
+  font: normal normal normal 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #22262a;
+  opacity: 1;
+}
+select {
+  border: none;
+  outline: none;
+  margin: 2.3rem;
+}
+option {
+  text-align: center;
+  font: normal normal normal 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #22262a;
+  opacity: 1;
+}
+.accessor-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+}
+.Pagination {
+  width: 100%;
+  height: 56px;
+  background: #fafafb 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-num {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+.pagination-num li {
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  font: normal normal 600 18px/28px Proxima Nova;
+  letter-spacing: 0px;
+  opacity: 1;
+  color: #22262a;
+}
+.pagination-num li span {
+  display: block;
+  margin-top: 13px;
+}
+.pagination-num li:hover {
+  background: #22262a;
+  color: white;
+}
+.Pagination-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .AccessorFirst {
+    flex-direction: column-reverse;
+  }
+  .AccessRight {
+    width: 100%;
+  }
+  .AccessRight-First {
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100vw;
+  }
+  .AccessRight .AcessRight-img {
+    width: 50%;
+  }
+  .AccessRight-Second-sort {
+    display: none;
+  }
+  .AccessRight-Second {
+    width: 100vw;
+    height: 50px;
+  }
+
+  .AccessLeft-Second .slider {
+    width: 100%;
+    text-align: center;
+  }
+  .Pagination {
+    height: 60px;
+  }
+  .pagination-num {
+    gap: 1rem;
+  }
+  .AccessRight-menu {
+  }
+  .AccessLeft-First {
+    width: 100%;
+  }
+  .AccessLeft-Second {
+    display: none;
+  }
+  .AccessLeft-Third {
+    width: 100%;
+  }
+  .AccessLeft-Fourth {
+    width: 100%;
+  }
+  .AccessLeft-Fifth {
+    width: 100%;
+  }
+  .Pagination {
+    display: none;
+  }
+  .Pagination-mobile {
+    display: block;
+    width: 100vw;
+  }
+  .pagination-num-mobile {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .pagination-num-mobile li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    background: white;
+    color: black;
+    height: 40px;
+    opacity: 1;
+    border-radius: 10px;
+  }
+  .pagination-num-mobile li:hover {
+    background: #1a67dd;
+    color: white;
+  }
+}

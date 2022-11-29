@@ -1,0 +1,169 @@
+.Container {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Wrapper {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.Left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.Language {
+  font-size: 14px;
+  cursor: pointer;
+}
+.SearchContainer {
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+  border-radius: 1rem;
+}
+input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 30px;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.Center {
+  flex: 1;
+  text-align: center;
+}
+.logo {
+  font-weight: bold;
+}
+.Right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin-top:1rem;
+  justify-content: space-evenly;
+  /* justify-content:space-between; */
+  /* margin-left:25px; */
+}
+.MenuItem-1{
+  margin-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  gap: 0.7rem;
+  align-items: center;
+  color:rgb(239, 145, 145);
+  display: flex;
+  gap:0.5rem;
+}
+.MenuItem-2{
+  margin-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  color:rgb(239, 145, 145);
+}
+.MenuItem-2 .pro1{
+  
+  color:rgb(189, 149, 149);
+  font-size:1.7rem;
+  margin-right:1.5rem;
+}
+.MenuItem-2 .pro2{
+  text-decoration:none;
+  font-size:1.1rem;
+  margin-right:1.5rem;
+  text-align: center;
+  color:rgb(152, 129, 129)
+}
+.MenuItem-1 p{
+  text-decoration: none;
+  text-align: none;
+  font-size:1rem;
+  font-weight:bolder;
+ 
+}
+.Link
+{
+  text-decoration:none;
+}
+option {
+  text-align: center;
+  font: normal normal normal 14px/24px Proxima Nova;
+  letter-spacing: 0px;
+  color: #262626;
+  opacity: 1;
+}
+.pro {
+  text-align: left;
+  font: normal normal 600 14px/17px Proxima Nova;
+  letter-spacing: 0.35px;
+  color: #262626;
+  opacity: 1;
+  margin-right: 10px;
+}
+span {
+  margin: -10px;
+}
+.select-left {
+  margin: 3px;
+  border: none;
+}
+@media screen and (max-width: 1000px) {
+  .Container {
+    height: 120px;
+  }
+  .Wrapper {
+    width: 100%;
+    padding: 10px, 0px;
+    flex-direction: row-reverse;
+    margin-left: -1rem;
+  }
+  .pro {
+    font-size: 10px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+  .Right {
+    flex: 2;
+    justify-content: space-between;
+  }
+  .Left {
+    margin-left: 10px;
+    margin-top:10px;
+    color:gray;
+  }
+  .select-left {
+    font-size: 10px;
+    font-weight: 600;
+    margin-right: -5px;
+  }
+  .MenuItem {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  .SearchContainer {
+    width: 80%;
+    position: absolute;
+    top:140px;
+    left:18px
+  }
+  input {
+   width:100%;
+  }
+  option {
+    font-size: 10px;
+  }
+}

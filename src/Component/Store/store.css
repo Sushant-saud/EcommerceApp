@@ -1,0 +1,88 @@
+.store {
+  position: absolute;
+  top: 28%;
+  left: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1029px;
+  height: 333px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: rgb(44, 62, 80) 0px 0px 10px 0px;
+  border-radius: 0px 0px 4px 4px;
+  opacity: 1;
+  gap: 1rem;
+}
+.Access-left {
+  position: relative;
+  flex: 1;
+  display: flex;
+  cursor: pointer;
+}
+.Access-center {
+    position: relative;
+  display: flex;
+  flex: 1;
+  cursor: pointer;
+}
+.Access-right {
+  display: flex;
+  position: relative;
+  flex: 1;
+  cursor: pointer;
+}
+.left {
+  text-align: left;
+  font: normal normal normal 14px/46px Proxima Nova;
+  letter-spacing: 0px;
+  color: #262626;
+  opacity: 1;
+}
+.center {
+  text-align: left;
+  font: normal normal normal 14px/46px Proxima Nova;
+  letter-spacing: 0px;
+  color: #262626;
+  opacity: 1;
+}
+.right {
+  text-align: left;
+  font: normal normal normal 14px/46px Proxima Nova;
+  letter-spacing: 0px;
+  color: #262626;
+  opacity: 1;
+}
+li {
+  list-style: none;
+}
+.right-icon{
+  margin-top:10px;
+  text-align: center;
+}
+.heading {
+  position: absolute;
+  top:-30px;
+  left:38px;
+  text-align: center;
+  font: normal normal 600 18px/28px Proxima Nova;
+  letter-spacing: 0px;
+  color: #c1c8ce;
+  opacity: 1;
+}
+@media screen and (max-width:900px){
+  .store{
+    top: 31.5%;
+    left: 10%;
+    width:80%;
+   height: 333px;
+  }
+  .Access-center
+{
+  display: none;
+}
+.Access-right{
+  display: none;
+}
+  
+}

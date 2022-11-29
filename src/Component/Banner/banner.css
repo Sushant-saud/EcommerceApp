@@ -1,0 +1,78 @@
+.Banner {
+  width: 100%;
+  height: 600px;
+  background: #2e90e5;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  z-index: 111;
+  justify-content: space-between;
+}
+.BannerInformation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  letter-spacing: 0.2px;
+}
+.BannerInformation h3 {
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal 300 66px/81px Proxima Nova;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.BannerInformation p {
+  color: var(--unnamed-color-ffffff);
+  text-align: left;
+  font: normal normal normal 24px/35px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+}
+.Banner-Img {
+  flex: 1;
+  width: 659px;
+  height: 700px;
+  background: transparent 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.Banner-Img img {
+  width: 100%;
+  height:650px;
+  /* margin-top: -3.1rem; */
+  z-index: 1;
+}
+@media screen and (max-width: 650px) {
+  .Banner {
+    width: 100%;
+    height: 500px;
+    flex-direction:column;
+  }
+  .BannerInformation {
+    width:100%;
+  
+  }
+  .BannerInformation h3{
+    font-size:50px;
+
+  }
+  .BannerInformation p{
+    font-size:20px;
+  }
+  .Banner-Img{
+    overflow: hidden;
+    width:100%;
+  }
+  .Banner-Img img{
+    width:100%;
+    height: 340px;
+    margin-left:1rem;
+    
+  
+    
+  }
+}

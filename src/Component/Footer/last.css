@@ -1,0 +1,52 @@
+.Footer{
+    display:flex;
+}
+.Footer-Left{
+    flex:1;
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
+}
+.Footer-Logo{
+
+}
+.Footer-Desc{
+margin:20px 0px;
+}
+.Footer-SocailContainer{
+    display: flex;
+}
+.Footer-SocailIcon{
+    height: 40px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+.Footer-Center{
+    flex:1;
+    padding:20px;
+}
+.Footer-Center-Title
+{
+    margin-bottom: 30px;
+}
+.List{
+ 
+}
+.Footer-List{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.Footer-ListItem{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.Footer-Right{
+    flex:1;
+}
