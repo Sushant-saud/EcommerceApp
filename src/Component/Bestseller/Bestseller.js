@@ -28,25 +28,25 @@ function Bestseller() {
       </div>
       <Dropdown title="Best-Product" className='dropdown'>
                 <Dropdown.Item as="a" href=
-                "http://localhost:3000/bestseller/all">
+                "https://ecommerce123a.herokuapp.com/bestseller/all">
                 All
                 </Dropdown.Item>
                 <Dropdown.Item as="a" href=
-                "http://localhost:3000/bestseller/iphone"
+                "https://ecommerce123a.herokuapp.com/bestseller/iphone"
                 >
                   iphone
                 </Dropdown.Item>
                 <Dropdown.Item as="a" href=
-                "http://localhost:3000/bestseller/mac">
+                "https://ecommerce123a.herokuapp.com/mac">
                 mac
                 </Dropdown.Item>
                 <Dropdown.Item as="a" href=
-                "http://localhost:3000/bestseller/ipod"
+                "https://ecommerce123a.herokuapp.com/ipod"
                 >
                   ipod
                 </Dropdown.Item>
                 <Dropdown.Item as="a" href=
-                "http://localhost:3000/bestseller/accesories"
+                "https://ecommerce123a.herokuapp.com/accesories"
                 >
                   Accessorie
                 </Dropdown.Item>

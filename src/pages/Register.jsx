@@ -70,13 +70,12 @@ const Register = () => {
     e.preventDefault();
     seterror(false);
     try {
-       const res = await axios.post("http://localhost:5000/api/auth/register", {
+       const res = await axios.post("https://ecommerce123a.herokuapp.com/api/auth/register",{
           username,
           phonenumber,
           email,
           password,
        });
-       console.log(res.data);
        res.data && window.location.replace("/login")
     } catch (err) {
        seterror(true);

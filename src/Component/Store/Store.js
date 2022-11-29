@@ -9,7 +9,7 @@ import Navbar from '../Navbar/Navbar';
 import Services from '../Services/Services';
 import store from './store.css';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowBack, ArrowBackIosRounded, ArrowRight, CollectionsBookmarkOutlined } from '@material-ui/icons';
+import {  ArrowRight } from '@material-ui/icons';
 import Menu from '../Menu/Menu';
 import Slider from '../slider/Slider';
 function Store() {
