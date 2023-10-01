@@ -49,7 +49,7 @@ a {
 .dropdown{
   display: none;
 }
-Link{
+.nav{
   text-decoration: none;
 }
 @media screen and (max-width:650px){

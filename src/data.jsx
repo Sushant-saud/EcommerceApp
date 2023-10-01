@@ -137,7 +137,7 @@ export const Accessories=[
   {
     id:2,
     img:"/Image/Apple Smartwatch Magic.png",
-    name:'ipod',
+    name:'apple',
     price:"$433",
     color:"green",
     brand:'seigmens'
@@ -145,32 +145,32 @@ export const Accessories=[
   {
     id:3,
     img:"/Image/New Apple Mac Mini.png",
-    name:'ipod',
-    price:"$423",
+    name:'watch',
+    price:"$23",
     color:"green",
     brand:'apple'
   },
   {
     id:4,
     img:"/Image/Apple_homepod-mini-white.png",
-    name:'ipod',
-    price:"$453",
+    name:'mini-phone',
+    price:"$153",
     color:"green",
-    brand:'lg'
+    brand:'apple'
   },
   {
     id:5,
     img:"/Image/airpods-max-hero-select-202011_FMT_WHH@2x.png",
-    name:'ipod',
-    price:"$493",
+    name:'iphone',
+    price:"$293",
     color:"green",
     brand:'samsung'
   },
   {
     id:6,
     img:"/Image/71fwbMm1NBL._AC_SL1500_.png",
-    name:'ipod',
-    price:"$413",
+    name:'labtop',
+    price:"$433",
     color:"green",
     brand:'seigmens'
   },
@@ -185,10 +185,10 @@ export const Accessories=[
   {
     id:8,
     img:"/Image/415ELavtbuL._SL1000_.png",
-    name:'ipod',
+    name:'Headphone',
     price:"$153",
     color:"green",
-    brand:'lg'
+    brand:'apple'
   },
   {
     id:9,
@@ -211,7 +211,7 @@ export const Accessories=[
     name:'ipod',
     price:"$753",
     color:"green",
-    brand:'lg'
+    brand:'samsung'
   },
   {
     id:12,
@@ -220,10 +220,126 @@ export const Accessories=[
     price:"$853",
     color:"green",
     brand:'samsung'
+  },
+  {
+    id:13,
+    img:"/Image/miscellaneous/ipod-touch-select-blue-2019_GEO_US_FMT_WHH.png",
+    name:'ipod',
+    price:"$493",
+    color:"green",
+    brand:'apple'
+  },
+  {
+    id:14,
+    img:"/Image/Apple Smartwatch Magic.png",
+    name:'ipod',
+    price:"$433",
+    color:"green",
+    brand:'seigmens'
+  },
+  {
+    id:15,
+    img:"/Image/New Apple Mac Mini.png",
+    name:'ipod',
+    price:"$423",
+    color:"green",
+    brand:'apple'
+  },
+  {
+    id:16,
+    img:"/Image/Apple_homepod-mini-white.png",
+    name:'ipod',
+    price:"$453",
+    color:"green",
+    brand:'apple'
+  },
+  {
+    id:17,
+    img:"/Image/airpods-max-hero-select-202011_FMT_WHH@2x.png",
+    name:'ipod',
+    price:"$493",
+    color:"green",
+    brand:'samsung'
+  },
+  {
+    id:18,
+    img:"/Image/71fwbMm1NBL._AC_SL1500_.png",
+    name:'ipod',
+    price:"$413",
+    color:"green",
+    brand:'seigmens'
+  },
+  {
+    id:19,
+    img:"/Image/52a2df80-98ec-4e1b-9cfc-71a68d7575b3_1.4fbf81e4bfa56bc8feffa82b5b15ca83.png",
+    name:'ipod',
+    price:"$353",
+    color:"green",
+    brand:'samsung'
+  },
+  {
+    id:20,
+    img:"/Image/415ELavtbuL._SL1000_.png",
+    name:'ipod',
+    price:"$153",
+    color:"green",
+    brand:'apple'
+  },
+  {
+    id:21,
+    img:"/Image/Apple Smartwatch Magic.png",
+    name:'ipod',
+    price:"$253",
+    color:"green",
+    brand:'apple'
+  },
+  {
+    id:22,
+    img:"/Image/apple_airpods.png",
+    name:'ipod',
+    price:"$653",
+    color:"green",
+    brand:'seigmens'
+  },{
+    id:23,
+    img:"/Image/design-hero_2x.png",
+    name:'ipod',
+    price:"$753",
+    color:"green",
+    brand:'samsung'
+  },
+  {
+    id:24,
+    img:"/Image/MQHX2@2x.png",
+    name:'ipod',
+    price:"$853",
+    color:"green",
+    brand:'samsung'
+  },
+  {
+    id:25,
+    img:"/Image/miscellaneous/ipod-touch-select-blue-2019_GEO_US_FMT_WHH.png",
+    name:'ipod',
+    price:"$493",
+    color:"green",
+    brand:'apple'
+  },
+  {
+    id:26,
+    img:"/Image/Apple Smartwatch Magic.png",
+    name:'ipod',
+    price:"$433",
+    color:"green",
+    brand:'seigmens'
+  },
+  {
+    id:27,
+    img:"/Image/New Apple Mac Mini.png",
+    name:'ipod',
+    price:"$423",
+    color:"green",
+    brand:'apple'
   }
-
-
-
 ]
 export const category=[
   {

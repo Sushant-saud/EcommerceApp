@@ -70,7 +70,7 @@ const Register = () => {
     e.preventDefault();
     seterror(false);
     try {
-       const res = await axios.post("https://ecommerce123a.herokuapp.com/api/auth/register",{
+       const res = await axios.post("https://ecommer-backend.vercel.app/api/auth/register",{
           username,
           phonenumber,
           email,

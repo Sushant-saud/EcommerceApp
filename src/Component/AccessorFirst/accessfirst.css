@@ -126,7 +126,7 @@
   justify-content: center;
   gap: 1rem;
 }
-.Range {
+.Range{
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -145,12 +145,12 @@
   color: #262626;
   opacity: 1;
 }
-.slider {
-  width: 90%;
+.Range .slider{
+  width:100%;
   height: 70px;
   opacity: 1;
+  overflow: hidden;
 }
-
 .AccessLeft-Third {
   display: flex;
   flex-direction: column;
@@ -240,15 +240,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 870px;
-  height: 340px;
+  width: 59.375rem;
+  height:25.25rem;
   background: #2e90e5 0% 0% no-repeat padding-box;
   border-radius: 4px;
   opacity: 1;
 }
 .AccessRight-First img {
-  width: 366px;
-  height: 340px;
+  width:26.875rem;
+  height:22.375rem;
   background: transparent 0% 0% no-repeat padding-box;
   opacity: 1;
 }
@@ -284,9 +284,9 @@
   opacity: 1;
   border-bottom: 4px double white;
 }
-.AccessRight-Second {
-  width: 870px;
-  height: 58px;
+.AccessRight-Second{
+  width:100%;
+  height: 3.626rem;
   background: #f6f7f8 0% 0% no-repeat padding-box;
   border-radius: 4px;
   margin-top: 1rem;
@@ -296,8 +296,8 @@
   justify-content: space-around;
 }
 .AccessRight-Second .img2 {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .AccessRight-Second-Item p {
@@ -384,22 +384,28 @@ option {
   .AccessRight-First {
     flex-direction: column;
     gap: 0.5rem;
-    width: 100vw;
+    width: 100%;
   }
   .AccessRight .AcessRight-img {
     width: 50%;
   }
-  .AccessRight-Second-sort {
+   .hide{
+    display: none;
+  }
+  
+  .AccessRight-Second-Item{
+    display: none;
+  }
+  .AccessRight-Second .AccessRight-menu{
     display: none;
   }
   .AccessRight-Second {
-    width: 100vw;
+    width: 90%;
     height: 50px;
   }
 
-  .AccessLeft-Second .slider {
-    width: 100%;
-    text-align: center;
+  .AccessLeft .AccessLeft-Second{
+   display: none;
   }
   .Pagination {
     height: 60px;
@@ -413,7 +419,7 @@ option {
     width: 100%;
   }
   .AccessLeft-Second {
-    display: none;
+   width:100%;
   }
   .AccessLeft-Third {
     width: 100%;
@@ -453,3 +459,4 @@ option {
     color: white;
   }
 }
+

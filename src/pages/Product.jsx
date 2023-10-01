@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import { Add, Remove } from '@material-ui/icons'
 import { publicRequest } from '../Component/RequestMethod/requestMethod'
 import { useLocation } from 'react-router-dom'
-import { addproduct } from '../redux/cartRedux'
+import { addproduct, addToCart } from '../redux/cartRedux'
 import { useDispatch } from 'react-redux'
 import {mobile} from '../Responsive'
 import PreFooter from '../PreFooter/PreFooter'
@@ -142,8 +142,9 @@ function Product() {
 
     }
     const handleClick=()=>{
-        dispatch(addproduct({products,quantity,price:products.price*quantity}))
-    }
+         dispatch(addproduct({products,quantity,price:products.price*quantity}))
+          }
+    
     return (
 
         <Container>

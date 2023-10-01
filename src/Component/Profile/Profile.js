@@ -7,30 +7,34 @@ import Annoucement from '../Annoucement/Annoucement';
 import Menu from '../Menu/Menu';
 import profile from './profile.css';
 function Profile() {
+    const {currentUser}=useSelector(state=>state.user);
     const dispatch = useDispatch();
     const user = useSelector((state) => state.user.currentUser);
     const handleLogoutt = async (e) => {
         try {
             alert("Are you sure to logout");
-            window.localStorage.removeItem('persist:root');
+            window.localStorage.clear();
+            window.location.href = 'https://online-ecommerceapp.netlify.app/';
+            currentUser="null";
+         
         } catch (err) {
             console.log(err);
         }
 
     }
-
+ 
     return (
         <>
             <Annoucement />
             <div className='parent'>
-                <h3>User details</h3>
+             
                 <img src="\Image\support.svg" className='user-profile' alt="img" />
                 <div className='login-register'>
                     <Link to="/login"><button className='btn-1'>Login</button></Link>
                     <Link to="/register"><button className='btn-2'>Register</button></Link>
 
                 </div>
-                <div className='profile-details'>
+                {/* <div className='profile-details'>
                     <div className='profile-details-1'>
                         <p>ID:</p>
                         <p>Name:</p>
@@ -49,7 +53,7 @@ function Profile() {
                         <p>Telengana</p>
                         <p>Shivam road</p>
                     </div>
-                </div>
+                </div> */}
                 {
                     user ?<div className='logout-register'>
                             <Link to="/login"><button className='btn-1' onClick={handleLogoutt}>Logout</button></Link>

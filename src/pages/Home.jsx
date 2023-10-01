@@ -3,7 +3,7 @@ import React from 'react'
 import Annoucement from '../Component/Annoucement/Annoucement'
 import Categories from '../Component/Categories/Categories';
 import Newslate from '../Component/Newslate/Newslate';
-import Product from '../Component/Product/Product';
+
 import Slider from '../Component/slider/Slider';
 import Footer from '../Component/Footer/Footer';
 import Navback from '../Component/NavBack/Navback';

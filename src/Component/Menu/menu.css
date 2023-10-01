@@ -51,6 +51,9 @@ a {
 .Navbar-menu .Navbar-menu-ul li:hover {
   color: blue;
 }
+.nav{
+  text-decoration: none;
+}
 @media screen and (max-width: 650px) {
   .Heading {
     position: absolute;

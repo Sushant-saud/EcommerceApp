@@ -27,7 +27,7 @@ function Bestseller() {
             category.map((data) => {
               return (
                 <>
-                  <Link to={`/bestseller/${data.category}`}><li>{data.name}</li></Link>
+                  <Link className='nav' to={`/bestseller/${data.category}`}><li>{data.name}</li></Link>
                 </>
               )
             })
@@ -37,7 +37,8 @@ function Bestseller() {
         
       </div>
 
-<ButtonDropdown isOpen={dropdownopen} toggle={toggle} className='dropdown'>
+<div className='dropdown'>
+<ButtonDropdown isOpen={dropdownopen} toggle={toggle} >
   <DropdownToggle caret>Menu</DropdownToggle>
   <DropdownMenu>
     <DropdownItem tag={Link} to={`/bestseller/all`}>all</DropdownItem>
@@ -47,6 +48,8 @@ function Bestseller() {
     <DropdownItem tag={Link} to={`/bestseller/accesories`}>accesories</DropdownItem>
   </DropdownMenu>
 </ButtonDropdown>
+</div>
+
 
       <div className='Best-Item'>
         <BestSellerItem />

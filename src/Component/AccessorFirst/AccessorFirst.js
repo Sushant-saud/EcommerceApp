@@ -1,6 +1,6 @@
 import React, {useState,useEffect } from 'react'
 import Bestseller from '../Bestseller/Bestseller';
-import Product from '../Product/Product';
+
 import accessfirst from './accessfirst.css';
 import AccessorProduct from '../AccessorProduct/AccessorProduct';
 import { Accessories } from '../../data';
@@ -9,15 +9,12 @@ import { ArrowBack, Menu } from '@material-ui/icons';
 import Pagination from '../pagination/Pagination';
 import Accesories from '../Accesories/Accesories';
 function AccessorFirst() {
-    const [sort, setsort] = useState("newest");
+    const [sort, setsort] = useState(" ");
     const [filter, setfilter] = useState({});
     const [val, setvalue] = useState([0, 0]);
     const [currentPage,setcurrentPage]=useState(1);
     const [postsPerPage,setpostsPerPage]=useState(10)
    
-    const handleChange = (e, item) => {
-        setvalue(item);
-    }
     const handleFilter =(e)=> {
         const value = e.target.value;
         setfilter({
@@ -33,7 +30,7 @@ function AccessorFirst() {
 
     }
     const number = filter.num;
-    const num = number ? filter.num : 12;
+    const num = number ? filter.num : 36;
     return (
         <div className='AccessorFirst-Full'>
             <div className='AccessorFirst'>
@@ -63,9 +60,11 @@ function AccessorFirst() {
                         <h3>Prices</h3>
                         <div className='Range'>
                             <p>Range:</p>
-                            <p>${val[0]}-${val[1]}</p>
+                            <p>$0-${val}</p>
                         </div>
-                        <Slider className='slider' value={val} onChange={handleChange} price max={5000} min={1000} />
+                        <div className='slider'>
+                            <input type="Range" min={0} max={20000} onClick={(e)=>{setvalue(e.target.value)}}/>
+                        </div>
                     </div>
 
                     <div className='AccessLeft-Third'>
@@ -122,19 +121,18 @@ function AccessorFirst() {
                             <p>{Accessories.length} items</p>
                         </div>
                         <div className='AccessRight-Second-sort'>
-                            <span>Sort By</span>
-                            <select onChange={(e)=>{setsort(e.target.value) }} name="color">
-                                <option defaultChecked>filter</option>
-                                <option value="newest">newest</option>
-                                <option value="price">Price(asc)</option>
-                                <option value="desc">Price(desc)</option>
+                            <span className='hide'>Sort By</span>
+                            <select onChange={handleFilter} name="brand">
+                                <option defaultChecked disabled>select</option>
+                                <option  value="samsung"  onClick={(e)=>{setsort("samsung")}}>samsung</option>
+                                <option value="apple" onClick={(e)=>{setsort("apple")}}>apple</option>
+                                <option value="seigmens" onClick={(e)=>{setsort("seigmens")}}>seigmens</option>
                             </select>
                         </div>
                         <div>
-                            <span>show</span>
+                            <span className='hide'>show</span>
                             <select onChange={handleFilter} name="num">
                                 <option defaultChecked>Choose</option>
-                                <option>12</option>
                                 <option>8</option>
                                 <option>7</option>
                                 <option>6</option>
@@ -145,11 +143,16 @@ function AccessorFirst() {
                         <Menu className='AccessRight-menu' />
                     </div>
                     <div className='accessor-product'>
-                        {
-                            Accessories.slice(0, `${num}`).map((item) => {
-                                return <AccessorProduct data={item} sort={sort} />
+                     {filter.brand ? 
+                            Accessories.slice(0,`${num}`).map((item) => {
+                                if(item.brand === filter.brand)return  <AccessorProduct data={item} sort={sort}/> 
+                            }):
+                            Accessories.slice(0,`${num}`).map((item) => {
+                                return  <AccessorProduct data={item} sort={sort}/> 
                             })
                         }
+                        
+            
                     </div>
                     <div className='Pagination'>
                         <ul className='pagination-num'>

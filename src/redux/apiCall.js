@@ -1,7 +1,6 @@
 import { useSelector } from "react-redux";
 import { publicRequest } from "../Component/RequestMethod/requestMethod";
 import { loginFailure, loginStart, loginSuccess } from "./userReducer";
-// import { logoutStart, logoutFailure, logoutSuccess } from "./userReducer";
 
 export const login = async (dispatch, user) => {
     dispatch(loginStart());

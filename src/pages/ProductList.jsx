@@ -9,7 +9,7 @@ import BestSellerItemList from '../Component/BestSellerItemList/BestSellerItemLi
 import Footer from '../Component/Footer/Footer'
 import Navbar from '../Component/Navbar/Navbar'
 import Newslate from '../Component/Newslate/Newslate'
-import Product from '../Component/Product/Product'
+
 import PreFooter from '../PreFooter/PreFooter'
 import Menu from '../Component/Menu/Menu'
 const Container = styled.div`

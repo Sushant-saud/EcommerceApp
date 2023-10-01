@@ -10,7 +10,7 @@ function BestSellerItem({cat,filter,sort}) {
 
     useEffect(() => {
         const getproduct = async () => {
-            const res = await axios.get(cat ? `https://ecommerce123a.herokuapp.com/api/product?category=${cat}` : "https://ecommerce123a.herokuapp.com/api/product");
+            const res = await axios.get(cat ? `https://ecommer-backend.vercel.app/api/product?category=${cat}` : "https://ecommer-backend.vercel.app/api/product");
             setproduct(res.data);
         }
         getproduct()

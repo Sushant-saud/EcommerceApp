@@ -24,12 +24,12 @@ function Menu() {
                 <div className={active ? "Navbar-menu active" : "Navbar-menu"}>
                     <ul className='Navbar-menu-ul'>
                         {/* {active ?<Close className='imclose' onClick={handleClose} /> : " "}  */}
-                        <Link to="/"><li>HOME</li></Link>
-                        <Link to="/store"><li>STORE <ArrowBackIosRounded className='ArrowBack' /></li> </Link>
-                        <Link to="/iphone"><li>IPHONE</li></Link>
-                        <Link to="/ipad"><li>IPAD</li></Link>
-                        <Link to="/macbook"><li>MACKBOOK</li></Link>
-                        <Link to="/store/Accesories"><li>ACCESORIES</li></Link>
+                        <Link className='nav' to="/"><li>HOME</li></Link>
+                        <Link className='nav' to="/store"><li>STORE <ArrowBackIosRounded className='ArrowBack' /></li> </Link>
+                        <Link className='nav'  to="/iphone"><li>IPHONE</li></Link>
+                        <Link className='nav'  to="/ipad"><li>IPAD</li></Link>
+                        <Link className='nav' to="/macbook"><li>MACKBOOK</li></Link>
+                        <Link className='nav'  to="/store/Accesories"><li>ACCESORIES</li></Link>
                     </ul>
                 </div>
             </div>

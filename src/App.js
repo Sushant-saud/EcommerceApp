@@ -14,6 +14,7 @@ import BestSellerItem from './Component/BestSellerItem/BestSellerItem';
 import Bestseller from './Component/Bestseller/Bestseller';
 import Profile from './Component/Profile/Profile';
 import Iphone from './Component/Iphone/Iphone';
+import Khalti from './Component/Khaltipay.js/Khalti';
 function App() {
   const user=useSelector((state)=>state.user.currentUser);
   console.log(null);
@@ -31,6 +32,7 @@ function App() {
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/product/:id" element={<Product />} />
         <Route path="/Cart" element={<Cart />}/>
+        <Route path="/pay" element={<Khalti/>}/>
         <Route path="/login" element={user? <Navigate replace to="/" />:<Login />}/>
         <Route path="/register" element={user ? <Navigate replace to="/" />:<Register />}/>
       </Routes>

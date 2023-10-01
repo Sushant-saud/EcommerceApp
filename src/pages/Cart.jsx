@@ -1,30 +1,28 @@
 import { Add, Remove } from "@material-ui/icons";
-import { useSelector } from "react-redux";
-import { useSearchParams } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import Annoucement from "../Component/Annoucement/Annoucement";
 import Footer from "../Component/Footer/Footer";
 import Navbar from "../Component/Navbar/Navbar";
 import PreFooter from "../PreFooter/PreFooter";
 import Menu from "../Component/Menu/Menu";
-import {mobile} from '../Responsive'
-
-
+import { mobile } from '../Responsive';
+import { increase,decrease } from '../redux/cartRedux.js'
+import { NavLink } from "react-router-dom";
 const Container = styled.div`
    width:100%;
 `;
-
 const Wrapper = styled.div`
   padding: 20px;
   width:100%;
-  ${mobile({ padding: "10px",width:"100%" })}
+  ${mobile({ padding: "10px", width: "100%" })}
 
 `;
 
 const Title = styled.h1`
   font-weight: 300;
   text-align: center;
-  ${mobile({ fontWeight:"500px",fontSize:"30.9px" })}
+  ${mobile({ fontWeight: "500px", fontSize: "30.9px" })}
 `;
 
 const Top = styled.div`
@@ -38,7 +36,7 @@ const TopButton = styled.button`
   padding: 10px;
   font-weight: 600;
   cursor: pointer;
-  ${mobile({ fontWeight:"500px",fontSize:"10.9px" })}
+  ${mobile({ fontWeight: "500px", fontSize: "10.9px" })}
   border: ${(props) => props.type === "filled" && "none"};
   background-color: ${(props) =>
     props.type === "filled" ? "black" : "transparent"};
@@ -68,19 +66,19 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
-  ${mobile({ flexDirection: "column"})}
+  ${mobile({ flexDirection: "column" })}
 
 `;
 
 const ProductDetail = styled.div`
   flex: 2;
   display: flex;
-  ${mobile({margin:"10px" })}
+  ${mobile({ margin: "10px" })}
 `;
 
 const Image = styled.img`
   width: 200px;
-  ${mobile({width:"150px" })}
+  ${mobile({ width: "150px" })}
 `;
 
 const Details = styled.div`
@@ -88,7 +86,7 @@ const Details = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  ${mobile({margin:"10px" ,gap:"2rem"})}
+  ${mobile({ margin: "10px", gap: "2rem" })}
 `;
 
 const ProductName = styled.span`
@@ -124,13 +122,13 @@ const ProductAmountContainer = styled.div`
 const ProductAmount = styled.div`
   font-size: 24px;
   margin: 5px;
-  ${mobile({ margin: "5px 15px" ,fontSize:"15px" })}
+  ${mobile({ margin: "5px 15px", fontSize: "15px" })}
 `;
 
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
-  ${mobile({ marginBottom: "20px",fontSize:"15px" })}
+  ${mobile({ marginBottom: "20px", fontSize: "15px" })}
  
 `;
 
@@ -150,7 +148,7 @@ const Summary = styled.div`
 
 const SummaryTitle = styled.h1`
   font-weight: 200;
-  ${mobile({ fontWeight:"500px",fontSize:"25.9px" })}
+  ${mobile({ fontWeight: "500px", fontSize: "25.9px" })}
 `;
 
 const SummaryItem = styled.div`
@@ -175,10 +173,14 @@ const Button = styled.button`
 
 const Cart = () => {
   const cart = useSelector(state => state.cart);
-   return (
+  const dispatch = useDispatch();
+  const handleIncrement=()=>{
+    console.log("incre")
+  }
+  return (
     <Container>
-        <Annoucement />
-      <Menu/>
+      <Annoucement />
+      <Menu />
       <Wrapper>
         <Title>YOUR BAG</Title>
         <Top>
@@ -205,14 +207,14 @@ const Cart = () => {
                           <b>ID:</b> {pro._id}
                         </ProductId>
                         <ProductColor color={pro.color} />
-                      
+
                       </Details>
                     </ProductDetail>
                     <PriceDetail>
                       <ProductAmountContainer>
-                        <Add />
+                        <Add onClick={handleIncrement("inc")}/>
                         <ProductAmount>{pro.quantity}</ProductAmount>
-                        <Remove />
+                        <Remove onClick={handleIncrement("de")} />
                       </ProductAmountContainer>
                       <ProductPrice>
                         $ {pro.price}
@@ -242,11 +244,14 @@ const Cart = () => {
               <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>$ {cart.total}</SummaryItemPrice>
             </SummaryItem>
-            <Button>CHECKOUT NOW</Button>
+            <NavLink to="/pay" state={{total:cart.total}}>
+            <Button >CHECKOUT NOW</Button>
+            </NavLink>
+           
           </Summary>
         </Bottom>
       </Wrapper>
-     <PreFooter/>
+      <PreFooter />
     </Container>
   );
 };
