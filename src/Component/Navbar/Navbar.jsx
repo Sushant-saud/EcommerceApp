@@ -1,8 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Person, PersonAdd, PowerOffOutlined, Search, ShoppingCartOutlined } from '@material-ui/icons'
+import PersonIcon from '@mui/icons-material/Person';
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import nav from './nav.css';
-import { Badge } from '@material-ui/core';
+import BadgeIcon  from '@mui/icons-material/Badge';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
@@ -32,22 +34,22 @@ function Navbar() {
                 <div className='Right'>
                     <Link to="/cart" className='Link'>
                         <div className='MenuItem-1'>
-                            <Badge badgeContent={quantity} color="primary">
-                                <ShoppingCartOutlined />
-                            </Badge>
+                            <BadgeIcon badgeContent={quantity} color="primary">
+                                <ShoppingCartOutlinedIcon />
+                            </BadgeIcon>
                             <p>{Price}</p>
                         </div>
                     </Link>
                     <Link to="/profile" className='Link'>
                         <div className='MenuItem-2'>
-                            <span ><Person className='pro1' /></span>
+                            <span ><PersonIcon className='pro1' /></span>
                             <span className='pro2'>profile</span>
                         </div>
                     </Link>
                     {/* <div className='MenuItem'>Sign In</div> */}
                     <div div className='SearchContainer'>
                     <input type='text' value={input} onChange={(e) => setinput(e.target.value)} />
-                    <Search />
+                    <SearchIcon />
                 </div>
                 </div>
 

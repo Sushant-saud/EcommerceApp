@@ -1,4 +1,4 @@
-import { Send } from '@material-ui/icons';
+import SendIcon from '@mui/icons-material/Send';
 import React from 'react'
 import news from './news.css';
 function Newslate() {
@@ -9,7 +9,7 @@ function Newslate() {
             <div className='News-InputContainer'>
                 <input className='News-input' type='text' placeholder='Your email'/>
                 <button className='News-Button'>
-                    <Send />
+                    <SendIcon />
                 </button>
             </div>
 

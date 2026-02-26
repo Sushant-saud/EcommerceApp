@@ -66,15 +66,13 @@
 // }
 
 // export default Footer;
-import {
-    Facebook,
-    Instagram,
-    MailOutline,
-    Phone,
-    Pinterest,
-    Room,
-    Twitter,
-  } from "@material-ui/icons";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import PhoneIcon from "@mui/icons-material/Phone";
+import PinterestIcon from "@mui/icons-material/Pinterest";
+import RoomIcon from "@mui/icons-material/Room";
+import TwitterIcon from "@mui/icons-material/Twitter";
   import styled from "styled-components";
   
   const Container = styled.div`
@@ -161,16 +159,16 @@ import {
           </Desc>
           <SocialContainer>
             <SocialIcon color="3B5999">
-              <Facebook />
+              <FacebookIcon />
             </SocialIcon>
             <SocialIcon color="E4405F">
-              <Instagram />
+              <InstagramIcon />
             </SocialIcon>
             <SocialIcon color="55ACEE">
-              <Twitter />
+              <TwitterIcon />
             </SocialIcon>
             <SocialIcon color="E60023">
-              <Pinterest />
+              <PinterestIcon />
             </SocialIcon>
           </SocialContainer>
         </Left>

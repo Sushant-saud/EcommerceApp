@@ -5,11 +5,10 @@ import Banner from '../Banner/Banner';
 import Bestseller from '../Bestseller/Bestseller';
 import Loadmore from '../LoadMore/Loadmore';
 import Navback from '../NavBack/Navback';
-import Navbar from '../Navbar/Navbar';
 import Services from '../Services/Services';
 import store from './store.css';
 import { Link, useLocation } from 'react-router-dom';
-import {  ArrowRight } from '@material-ui/icons';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import Menu from '../Menu/Menu';
 import Slider from '../slider/Slider';
 function Store() {
@@ -24,7 +23,7 @@ function Store() {
             <div className='store'>
 
                 <div className='Access-left'>
-              <Link to={`/store/Accesories`}> <h3 className='heading'>ACCESORIES <span className='right-icon'><ArrowRight/></span></h3></Link> 
+              <Link to={`/store/Accesories`}> <h3 className='heading'>ACCESORIES <span className='right-icon'><ArrowRightIcon/></span></h3></Link> 
                     <ul className='left'>
                         <li>AirPort & Wireless</li>
                         <li>AppleCare</li>

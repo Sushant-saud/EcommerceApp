@@ -1,13 +1,12 @@
-import { Add, Remove } from "@material-ui/icons";
+
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove'
 import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import Annoucement from "../Component/Annoucement/Annoucement";
-import Footer from "../Component/Footer/Footer";
-import Navbar from "../Component/Navbar/Navbar";
 import PreFooter from "../PreFooter/PreFooter";
 import Menu from "../Component/Menu/Menu";
 import { mobile } from '../Responsive';
-import { increase,decrease } from '../redux/cartRedux.js'
 import { NavLink } from "react-router-dom";
 const Container = styled.div`
    width:100%;
@@ -212,9 +211,9 @@ const Cart = () => {
                     </ProductDetail>
                     <PriceDetail>
                       <ProductAmountContainer>
-                        <Add onClick={handleIncrement("inc")}/>
+                        <AddIcon onClick={handleIncrement("inc")}/>
                         <ProductAmount>{pro.quantity}</ProductAmount>
-                        <Remove onClick={handleIncrement("de")} />
+                        <RemoveIcon onClick={handleIncrement("de")} />
                       </ProductAmountContainer>
                       <ProductPrice>
                         $ {pro.price}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { ArrowLeftOutlined, ArrowRightOutlined } from '@material-ui/icons'
+import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
+import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined'
 import slide from './slide.css';
 import { sliderItems } from '../../data';
 function Slider() {
@@ -23,7 +24,7 @@ function Slider() {
             <div className='Container2'>
            
             <div className='Arrow-left'>
-                <ArrowLeftOutlined className="icon" onClick={() =>handleArrow('left')} />
+                <ArrowLeftOutlinedIcon className="icon" onClick={() =>handleArrow('left')} />
             </div>
             <div className="Wrapper2" style={active}>
                 {
@@ -53,7 +54,7 @@ function Slider() {
 
             </div>
             <div className='Arrow-right'>
-                <ArrowRightOutlined className="icon" onClick={() => handleArrow('right') } />
+                <ArrowRightOutlinedIcon className="icon" onClick={() => handleArrow('right') } />
             </div>
 
         </div>

@@ -1,6 +1,4 @@
 import axios from 'axios';
-import { Link, useLocation } from 'react-router-dom';
-import { ShoppingCartOutlined, SearchOutlined, FavoriteBorderOutlined, Star } from '@material-ui/icons';
 import React, { useEffect, useState } from 'react'
 import selleritem from './selleritem.css'
 import BestSellerItemList from '../BestSellerItemList/BestSellerItemList';

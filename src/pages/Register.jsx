@@ -1,11 +1,12 @@
 import { useState } from "react";
 import styled from "styled-components";
 import axios from 'axios';
-import NavLink from 'react-dom'
 import {mobile} from '../Responsive'
+// import {Form} from 'formik'
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
+  
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -69,7 +70,7 @@ const Register = () => {
   const handlesubmit = async (e) => {
     e.preventDefault();
     seterror(false);
-    try {
+    try { 
        const res = await axios.post("https://ecommer-backend.vercel.app/api/auth/register",{
           username,
           phonenumber,
@@ -83,6 +84,7 @@ const Register = () => {
  }
   return (
     <Container>
+       <Title>Log In</Title>
       <Wrapper>
         <Title>CREATE AN ACCOUNT</Title>
         <Form onSubmit={handlesubmit}>

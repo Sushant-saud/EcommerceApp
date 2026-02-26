@@ -1,4 +1,6 @@
-import { Facebook, Twitter } from '@material-ui/icons';
+
+import FacebookIcon from '@mui/icons-material/Facebook';
+import TwitterIcon from '@mui/icons-material/Twitter'
 import React from 'react'
 import footer from './footer.css';
 function PreFooter() {
@@ -13,8 +15,8 @@ function PreFooter() {
                     <h3>Follow Us</h3>
                     <p>This assessand Retiple components in React like Smart Components and Dummdify and do</p>
                     <div className='follow-social'>
-                    <Twitter className='follow-social-t'/>
-                    <Facebook className="follow-social-f"/>
+                    <TwitterIcon className='follow-social-t'/>
+                    <FacebookIcon className="follow-social-f"/>
                     </div>
                 
                 </div>

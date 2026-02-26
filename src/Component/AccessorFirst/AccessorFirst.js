@@ -4,8 +4,9 @@ import Bestseller from '../Bestseller/Bestseller';
 import accessfirst from './accessfirst.css';
 import AccessorProduct from '../AccessorProduct/AccessorProduct';
 import { Accessories } from '../../data';
-import { Slider } from '@material-ui/core';
-import { ArrowBack, Menu } from '@material-ui/icons';
+import Slider from '@mui/material/Slider';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import MenuIcon from '@mui/icons-material/Menu';
 import Pagination from '../pagination/Pagination';
 import Accesories from '../Accesories/Accesories';
 function AccessorFirst() {
@@ -140,7 +141,7 @@ function AccessorFirst() {
                             </select>
                         </div>
                         <img src="https://cdn-icons-png.flaticon.com/512/17/17704.png" alt="menu" className='img2' />
-                        <Menu className='AccessRight-menu' />
+                        <MenuIcon className='AccessRight-menu' />
                     </div>
                     <div className='accessor-product'>
                      {filter.brand ? 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Annoucement from '../Component/Annoucement/Annoucement'
-import Footer from '../Component/Footer/Footer'
 import Newslate from '../Component/Newslate/Newslate'
 import styled from 'styled-components'
-import { Add, Remove } from '@material-ui/icons'
+import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove'
 import { publicRequest } from '../Component/RequestMethod/requestMethod'
 import { useLocation } from 'react-router-dom'
 import { addproduct, addToCart } from '../redux/cartRedux'
@@ -180,9 +180,9 @@ function Product() {
                     </FilterContainer>
                     <AddContainer>
                         <AmmoutContainer>
-                            <Remove onClick={() => handleQuantity('dec')} />
+                            <RemoveIcon onClick={() => handleQuantity('dec')} />
                             <Ammount>{quantity}</Ammount>
-                            <Add onClick={() => handleQuantity('inc')} />
+                            <AddIcon onClick={() => handleQuantity('inc')} />
                         </AmmoutContainer>
                         <Button onClick={handleClick}>Add to Cart</Button>
                     </AddContainer>

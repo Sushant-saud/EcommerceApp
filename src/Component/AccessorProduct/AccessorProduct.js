@@ -1,4 +1,4 @@
-import { Star } from '@material-ui/icons'
+import StarIcon from '@mui/icons-material/Star';
 import React from 'react'
 import { useEffect,useState } from 'react';
 import accessproduct from './accessproduct.css';
@@ -8,11 +8,11 @@ function AccessorProduct({data}) {
         <img src={data.img} alt='img'/>
         <h3>{data.name}</h3>
         <div>
-            <Star className='red'/>
-            <Star className='red'/>
-            <Star className='red'/>
-            <Star className='red'/>
-            <Star className='gray'/>
+            <StarIcon className='red'/>
+            <StarIcon className='red'/>
+            <StarIcon className='red'/>
+            <StarIcon className='red'/>
+            <StarIcon className='gray'/>
         </div>
         <p className='accessproduct-price'>$499 <s className='accessproduct-strike'>$4454</s></p>
         
