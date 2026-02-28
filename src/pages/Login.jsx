@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import styled from "styled-components";
 import { login } from "../redux/apiCall";
 import {mobile} from '../Responsive'
+import {Formik,Form,input} from 'formik'
+ import * as Yup from 'yup';
 const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -32,7 +34,7 @@ const Title = styled.h1`
   font-weight: 300;
 `;
 
-const Form = styled.form`
+const Formfield = styled.form`
   display: flex;
   flex-direction: column;
 `;
@@ -78,19 +80,71 @@ const Login = () => {
     e.preventDefault();
     login(dispatch,{username,password})
   }
+  const SignupSchema = Yup.object().shape({
+   username: Yup.string()
+     .min(2, 'Too Short!')
+     .max(50, 'Too Long!')
+     .required('Required'),
+   password: Yup.string()
+     .min(2, 'Too Short!')
+     .max(50, 'Too Long!')
+     .required('Required'),
+   email: Yup.string().email('Invalid email').required('Required'),
+ });
+ 
   return (
     <Container>
       <Wrapper>
         <Title>SIGN IN</Title>
        
-        <Form>
-          <Input placeholder="username" onChange={(e)=>{setUsername(e.target.value)}}/>
-          <Input placeholder="password" type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
+        <Formfield>
+          <Formik    
+        initialValues={{
+         username: '',
+         password: '',
+         email:'',
+       }}
+       validationSchema={SignupSchema}
+       onSubmit={values => {
+         // same shape as initial values
+         console.log(values);
+       }}>
+           {({ errors, touched,handleBlur,handleChange,values,handleSubmit }) => (
+            <Form onSubmit={handleSubmit}>
+         <input 
+           name='username'
+           placeholder="username"  
+           onChange={handleChange}
+           onBlur={handleBlur}
+           value={values.username}
+           />
+            {errors.username ? (
+             <div>{errors.firstName}</div>
+           ) : null}
+          <input 
+          placeholder="password" 
+          name='password'
+          onChange={handleChange}
+           onBlur={handleBlur}
+           value={values.password}
+          />
+              {errors.password? (
+             <div>{errors.password}</div>
+           ) : null}
+           
+          <button type='submit'>LOGIN</button>
+            </Form>
+           )}
+           
+          </Formik>
+ 
+          {/* <Input placeholder="username" name='username' onChange={(e)=>{setUsername(e.target.value)}}/>
+          <Input placeholder="password" name='password' type="password" onChange={(e)=>{setPassword(e.target.value)}}/>
           <Button onClick={handleClick} disabled={isFetching}>LOGIN</Button>
           {error && <Error>Something is wrong</Error>}
           <Link>Forgot password</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
-        </Form>
+          <Link>CREATE A NEW ACCOUNT</Link> */}
+        </Formfield>
       </Wrapper>
     </Container>
   );
